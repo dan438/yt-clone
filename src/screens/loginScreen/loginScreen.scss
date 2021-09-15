@@ -3,7 +3,7 @@
 .login {
    height: 100vh;
    display: grid;
-
+   background: #fff;
    place-items: center;
 
    &__container {
@@ -24,11 +24,18 @@
             outline: none;
          }
       }
+      p {
+         margin-top: 5px;
+      }
    }
 
    img {
       width: 130px;
       height: 130px;
       object-fit: contain;
+   }
+
+   .text-center {
+      text-align: center;
    }
 }
