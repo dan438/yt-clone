@@ -21,7 +21,6 @@ export const login = () => async dispatch => {
 
       const res = await auth.signInWithPopup(provider)
       const accessToken = res.credential.accessToken
-         console.log(res);
          
        const profile = {
          name: res.additionalUserInfo.profile.name,
@@ -40,7 +39,6 @@ export const login = () => async dispatch => {
         payload: profile,
       })
    } catch (error) {
-      console.log(error.message)
       dispatch({
          type: LOGIN_FAIL,
          payload: error.message,

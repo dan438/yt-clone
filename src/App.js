@@ -6,7 +6,7 @@ import Sidebar from './components/sidebar/Sidebar'
 import HomeScreen from './screens/homeScreen/HomeScreen'
 import LoginScreen from './screens/loginScreen/LoginScreen'
 
-import { Redirect, Route, Router, Switch, useHistory } from 'react-router-dom'
+import { Redirect, Route, Switch, useHistory } from 'react-router-dom'
 
 import './_app.scss'
 import { useSelector } from 'react-redux'
